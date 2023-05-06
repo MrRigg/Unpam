@@ -8,7 +8,7 @@ class MyApps extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "201011400423 - 123456789",
+      debugShowCheckedModeBanner: false,
       home: MyHomePages(),
     );
   }
@@ -22,8 +22,13 @@ class MyHomePages extends StatefulWidget {
 class _MyHomePagesState extends State<MyHomePages> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Text("dada"),
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          "201011400423 - 123456789",
+        ),
+      ),
     );
   }
 }
