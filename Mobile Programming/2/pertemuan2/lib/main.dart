@@ -26,8 +26,40 @@ class _MyHomePagesState extends State<MyHomePages> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "201011400423 - 123456789s",
+          "201011400423 - 123456789",
         ),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("Kelas 06TPLM006"),
+            Text("Rio Iglesias"),
+            Text("NIM 201011400423"),
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+            ),
+            label: "Explore",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.messenger_outline,
+            ),
+            label: "Feed",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.settings,
+            ),
+            label: "Setting",
+          ),
+        ],
       ),
     );
   }
